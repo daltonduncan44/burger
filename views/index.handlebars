@@ -1,6 +1,6 @@
 <h1>Eat-Da-Burger!</h1>
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <h4>BURGERS TO DEVOUR!</h4>
         <ul class="list-group">
         {{#each burgers}}
@@ -11,7 +11,7 @@
               <span class="input-group-btn">
                 <form action="/{{this.id}}?_method=PUT" method="POST">
                   <input type="hidden" name="devoured" value="true">
-                  <button class="btn btn-default btn-sm" type="submit"> Devour It! </button>
+                  <button class="btn btn-default btn-sm" id="dBut" type="submit"> Devour It! </button>
                 </form>
               </span>
             </div>
@@ -23,7 +23,7 @@
 
 
 
-    <div class="col-md-4">
+    <div class="col-md-6">
       <h4>DEVOURED! YUM!</h4>
       <div class="panel panel-default">
 
@@ -44,13 +44,13 @@
 
 
   <div class="row">
-  <div class="col-md-8">
-    <p> Enter the name of the burger you want to eat and click submit! </p>
+  <div class="col-md-10" id="addFooter">
+    <h4> Enter the name of the burger you want to eat and click submit! </h4>
     <form class="create-update-form" action="/" method="POST">
       <div class="form-group">
     <textarea class="form-control input-md" type="text" name="name" rows="3"> </textarea>
  </div>
-      <button class="btn btn-default btn-lg" type="submit">Add Burger!</button>
+      <button class="btn btn-outline-light" type="submit">Add Burger!</button>
     </form>
   </div>
 

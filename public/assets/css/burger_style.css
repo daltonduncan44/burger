@@ -1,0 +1,30 @@
+body {
+
+	background-image: url("../img/wood.jpg");
+
+}
+
+#burgpic{
+    margin: 40px 0px 40px 450px;
+}
+
+#addFooter{
+    margin: 25px 0px 0px 266px;
+}
+
+h1{
+    margin: 0px 0px 15px 403px;
+    color: whitesmoke;
+}
+
+h4{
+    color: white;
+
+}
+
+
+
+
+.input-group-btn{
+margin: auto;
+}
